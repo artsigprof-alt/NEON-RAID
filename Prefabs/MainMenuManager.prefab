@@ -1,0 +1,131 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &295760832309793127
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7733079654374876084}
+  - component: {fileID: 585245326630734411}
+  - component: {fileID: 8660119827915746475}
+  - component: {fileID: 6268604753416985673}
+  - component: {fileID: 285959759111705411}
+  - component: {fileID: 7440709403346870706}
+  m_Layer: 0
+  m_Name: MainMenuManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7733079654374876084
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 295760832309793127}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &585245326630734411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 295760832309793127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ad24c5bf642a54428645090df21d5a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SettingsController
+  settingsPanel: {fileID: 0}
+  musicButton: {fileID: 0}
+  sfxButton: {fileID: 0}
+  musicText: {fileID: 0}
+  sfxText: {fileID: 0}
+--- !u!114 &8660119827915746475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 295760832309793127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a54c236e3b519d4d87548e22bbec796, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MainMenuUI
+  mainPanel: {fileID: 0}
+  armoryPanel: {fileID: 0}
+  nftShopPanel: {fileID: 0}
+  closeNFTShopButton: {fileID: 0}
+  walletStatus: {fileID: 0}
+--- !u!114 &6268604753416985673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 295760832309793127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3adcba68be77544ab026cb17665f618, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ArmoryUI
+  panel: {fileID: 0}
+  damageText: {fileID: 0}
+  damageCostText: {fileID: 0}
+  fireRateText: {fileID: 0}
+  fireRateCostText: {fileID: 0}
+  healthText: {fileID: 0}
+  healthCostText: {fileID: 0}
+  speedText: {fileID: 0}
+  speedCostText: {fileID: 0}
+--- !u!114 &285959759111705411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 295760832309793127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40948a1cf4d234c44aeebd4332543959, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SolanaWalletUI
+  walletAddressText: {fileID: 0}
+  statusText: {fileID: 0}
+  connectButton: {fileID: 0}
+  assetsPanel: {fileID: 0}
+  assetsTitleText: {fileID: 0}
+  skrBalanceText: {fileID: 0}
+  refreshSkrButton: {fileID: 0}
+  transactionText: {fileID: 0}
+--- !u!114 &7440709403346870706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 295760832309793127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 945c6806ab9012c4a97d741bb885ddb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HardModePurchaseController
+  treasuryWallet: 5oTxwPdy8YXbxV8Pe2bENYeEsa3YmPoXP8PBjT22vvvX
+  testMode: 1
+  hardMenuSceneName: HardMenu
+  statusText: {fileID: 0}
+  priceText: {fileID: 0}
+  diagnosticText: {fileID: 0}
