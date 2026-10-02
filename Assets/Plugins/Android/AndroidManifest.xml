@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- [SOLANA START] Разрешаем приложению видеть кошельки Solana -->
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <category android:name="android.intent.category.BROWSABLE" />
+            <data android:scheme="solana-wallet" />
+        </intent>
+    </queries>
+    <!-- [SOLANA END] -->
+
+    <application>
+
+        <!-- [SOLANA START] Прозрачная Activity для корректной работы плагина -->
+        <activity
+            android:name="com.wos.solana.MwaProxyActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:exported="false" />
+        <!-- [SOLANA END] -->
+
+        <!-- UNITY PLAYER ACTIVITY -->
+        <activity
+            android:name="com.unity3d.player.UnityPlayerActivity"
+            android:theme="@style/UnityThemeSelector"
+            android:exported="true">
+
+            <!-- MAIN -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <!-- DEEP LINK (Твои существующие настройки) -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="tankgame"
+                    android:host="callback"/>
+            </intent-filter>
+
+            <meta-data
+                android:name="unityplayer.UnityActivity"
+                android:value="true" />
+        </activity>
+
+        <!-- UNITY GAME ACTIVITY -->
+        <activity
+            android:name="com.unity3d.player.UnityPlayerGameActivity"
+            android:theme="@style/BaseUnityGameActivityTheme"
+            android:exported="true">
+
+            <!-- MAIN -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <!-- DEEP LINK (Твои существующие настройки) -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="tankgame"
+                    android:host="callback"/>
+            </intent-filter>
+
+            <meta-data
+                android:name="unityplayer.UnityActivity"
+                android:value="true" />
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="game" />
+        </activity>
+
+    </application>
+</manifest>
