@@ -1,0 +1,44 @@
+# Unity generated
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+[Mm]emoryCaptures/
+[Rr]ecording[s]/
+.utmp/
+
+# Visual Studio / Rider
+.vs/
+.idea/
+.vscode/
+*.csproj
+*.sln
+*.suo
+*.user
+*.userprefs
+
+# Unity crash reports
+sysinfo.txt
+
+# Android builds
+*.apk
+*.aab
+
+# Android signing
+*.keystore
+*.jks
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary backup files
+*.bak
+*.bak.meta
+
+# Unity recovery files
+Assets/_Recovery/
+Assets/_Recovery.meta
